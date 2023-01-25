@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_report_banque_atlantique_report_banque_atlantique,report_banque_atlantique.report_banque_atlantique,model_report_banque_atlantique_report_banque_atlantique,base.group_user,1,1,1,1

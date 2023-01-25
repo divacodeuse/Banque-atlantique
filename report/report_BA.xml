@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- QWeb Reports -->
+
+        <report
+            id="report_print_bon_sortie"
+            binding_model_id="model_product_template"
+            model="rapport.banque"
+            report_type="qweb-pdf"
+            string="Bon de sortie"
+            name="report_banque_atlantique.banque_demo_report"
+            file="report_banque_atlantique.banque_demo_report"
+            />
+
+    </data>
+
+</odoo>

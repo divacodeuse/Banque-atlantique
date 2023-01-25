@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_banque_atlantique.banque_demo_report_template">
+			<t t-call="report.banquee_external">
+				<div class="page">
+					<div class="oe_structure"/>
+					  <br/>
+<br/>
+
+					<header>
+						<div>
+							<img src="./banque atlantique.jpg"/>
+						</div>
+					</header>
+					<br/>
+					<p>Business Service</p>
+					<p><b>Business Service</b></p>
+					<div >
+						<h2>BON DE SORTIE DE STOCK..</h2>
+                         <p>Dates</p>
+						<p>Mois</p>
+						<p>31/01/2022</p>
+
+					</div>
+					<table>
+						<tr>
+							<td>Agence</td>
+							<td>Service ou Departement</td>
+							<td>Nom demandeur</td>
+							<td>Statut demandeur</td>
+							<td>Nom du livreur</td>
+
+
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>N°REF</td>
+							<td>DESIGNATION DE LA MATIERE/ARTICLE</td>
+							<td>UNITE</td>
+							<td>QUANTITE LIVREE</td>
+							<td>OBSERVATIONS</td>
+						</tr>
+					</table>
+					<br/>
+					<table>
+						<tr>
+							<td>VISA RESPONSABLE STOCK</td>
+							<td>ABS</td>
+							<td>VISA DEMANDEUR</td>
+							<td>CIRCUITS DES BESOINS</td>
+
+						</tr>
+					</table>
+
+
+				</div>
+			</t>
+		</template>
+        <template id="banque_demo_report">
+                <t t-call="report.html_container">
+                    <t t-foreach="docs" t-as="doc">
+                    <t t-call="report_banque_atlantique.banque_demo_report_template" t-lang="doc.doctor_id.partner_id.lang"/>
+                    </t>
+                </t>
+        </template>
+    </data>
+</odoo>
